@@ -57,4 +57,4 @@ axs[0].plot(ys_df.index, ys_df.to_numpy(), lw=1)
 kde_df.plot(ax=axs[1])
 fig.tight_layout()
 ```
-![example_kde_df](examples/example_simple_kde_df.png)
+![example_kde_df](https://github.com/rhkarls/kdlines/blob/main/examples/example_simple_kde_df.png)
