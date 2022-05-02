@@ -1,7 +1,13 @@
 # kdlines
-Density heatmaps of many (time-)series using kernel density estimation.
+Density heatmaps of many (time-)series using kernel density estimation using scikit-learn.
 
 This package is at alpha stage and experimental.
+
+## Requirements
+
+    scikit-learn
+    numpy
+    matplotlib
 
 ## Installation
 
