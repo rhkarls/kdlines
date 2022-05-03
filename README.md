@@ -1,7 +1,7 @@
 # kdlines
 [![pypi_shield](https://img.shields.io/pypi/v/kdlines.svg)](https://pypi.org/project/kdlines/)
 [![pypi_license](https://badgen.net/pypi/license/kdlines/)](https://pypi.org/project/kdlines/)
-![tests_workflow](https://github.com/rhkarls/kdlines/actions/workflows/tests.yml/badge.svg)
+![tests_workflow](https://github.com/rhkarls/kdlines/actions/workflows/run_flake8_pytest.yml/badge.svg)
 Density heatmaps of many (time-)series using kernel density estimation using scikit-learn.
 
 This package is at alpha stage and experimental.
