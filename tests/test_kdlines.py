@@ -56,7 +56,7 @@ bandwidth = 0.25
 kde_kernel = "linear"
 
 # expected grids
-expected_grids = np.load("expected_grids.npz")
+expected_grids = np.load("tests/expected_grids.npz")
 grid_expected_1d = expected_grids["grid_expected_1d"]
 grid_expected_2d = expected_grids["grid_expected_2d"]
 kd_at_y_1d_expected = expected_grids["kd_at_y_1d_expected"]
