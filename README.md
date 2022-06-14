@@ -2,9 +2,15 @@
 [![pypi_shield](https://img.shields.io/pypi/v/kdlines.svg)](https://pypi.org/project/kdlines/)
 [![pypi_license](https://badgen.net/pypi/license/kdlines/)](https://pypi.org/project/kdlines/)
 ![tests_workflow](https://github.com/rhkarls/kdlines/actions/workflows/run_flake8_pytest.yml/badge.svg)
+
 Density heatmaps of many (time-)series using kernel density estimation using scikit-learn.
 
-This package is at alpha stage and experimental.
+Also see the [`eplines`](https://github.com/rhkarls/eplines) package for similar functionality with empirical frequency. 
+
+This package was inspired by [DenseLines](https://dig.cmu.edu/publications/2018-million-time-series.html) 
+by Moritz & Fisher.
+
+Please note that this package is at alpha stage and experimental.
 
 ## Requirements
 

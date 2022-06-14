@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """Kernel density estimation and heatmap visualisation on many lines,
 time series or 2D data using scikit-learn.
 
@@ -61,7 +60,7 @@ class KernelDensityLines:
     KernelDensityLines instance
     
     Notes
-    _____
+    -----
     
     Note that the **choice of kernel** can have a large effect on the speed of the KDE.
     

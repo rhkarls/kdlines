@@ -1,8 +1,6 @@
 """
 A simple example based on numpy arrays and pandas DataFrame
 """
-
-
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -39,7 +37,7 @@ ax = kde_np.plot()
 
 # Estimation on the pandas DataFrame
 kde_df = KernelDensityLines(
-    y_res=y_res, kde_kernel='linear', bandwidth='scott'
+    y_res=y_res, kde_kernel='gaussian', bandwidth='scott'
 )
 kde_df.fit(y_lines=ys_df)
 
@@ -48,5 +46,16 @@ kde_df.fit(y_lines=ys_df)
 # with timestamps
 fig, axs = plt.subplots(2, 1, figsize=(8, 8), sharey=True, sharex=False)
 axs[0].plot(ys_df.index, ys_df.to_numpy(), lw=1)
-kde_df.plot(ax=axs[1])
+kde_df.plot(ax=axs[1], cmap='inferno')
 fig.tight_layout()
+fig.show()
+
+# Plotting with lines
+fig2, ax2 = plt.subplots()
+kde_df.plot(ax=ax2, cmap='summer', show_data=True)
+fig2.show()
+
+# Extracting density values from a "row" of the heatmap
+kd_at_y = kde_df.kd_at_y(y=16)
+fig3, ax3 = plt.subplots()
+ax3.plot(ys_df.index, kd_at_y)
